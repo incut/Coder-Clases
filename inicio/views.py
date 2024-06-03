@@ -60,7 +60,7 @@ def template4(request,nombre,apellido,edad):
     return render(request,'template2.html', datos)
 
 def probando(request): 
-    lista = range(random(500))
+    lista = list(range(500))
     
     numeros = random.choices(lista, k=50)
     return render(request,'probando.html', {'numeros': numeros})
